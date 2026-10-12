@@ -1,0 +1,50 @@
+{
+  "grid_available": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "generator_capacity_kw": 10.9,
+  "fuel_budget_litres": 8.0,
+  "fuel_table": [
+    {
+      "load_kw": 4,
+      "litres_per_hour": 0.8
+    },
+    {
+      "load_kw": 7,
+      "litres_per_hour": 1.2
+    },
+    {
+      "load_kw": 10,
+      "litres_per_hour": 1.6
+    }
+  ],
+  "max_consecutive_dark": 2,
+  "shops": [
+    {
+      "id": "fractional_kw_regression",
+      "kw": 3.5,
+      "type": "normal",
+      "value_per_slot": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ]
+    }
+  ]
+}

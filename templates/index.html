@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10251f" />
+    <title>Who Stays On? — Shapla Shopping Complex</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=3" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true">W</span>
+          <span>Who Stays On?</span>
+        </a>
+        <span class="topbar-note"><span class="live-dot"></span> Generator planner</span>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Shapla Shopping Complex · Mirpur</p>
+            <h1>When the grid goes down,<br /><span>who stays on?</span></h1>
+            <p class="hero-description">Create the best power plan for your shops using your generator capacity and fuel supply.</p>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="art-bolt">ϟ</div>
+            <span class="art-caption">Plan it<br />in one click</span>
+          </div>
+        </section>
+
+        <form id="scenario-form">
+          <section class="panel">
+            <div class="section-heading">
+              <div class="step-number">01</div>
+              <div>
+                <p class="section-kicker">First</p>
+                <h2>Grid and generator details</h2>
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <label class="field">
+                <span>Generator capacity</span>
+                <span class="input-with-unit"><input id="capacity" type="number" min="1" step="1" value="20" required /><span>kW</span></span>
+              </label>
+              <label class="field">
+                <span>Diesel budget</span>
+                <span class="input-with-unit"><input id="fuel-budget" type="number" min="0" step="0.01" value="17" required /><span>litres</span></span>
+              </label>
+              <label class="field">
+                <span>Maximum consecutive hours off</span>
+                <span class="input-with-unit"><input id="max-dark" type="number" min="0" max="9" step="1" value="2" required /><span>hours</span></span>
+              </label>
+            </div>
+
+            <div class="subsection">
+              <div class="subsection-heading">
+                <div>
+                  <h3>Generator fuel consumption</h3>
+                  <p>Enter the estimated hourly fuel use for each load level.</p>
+                </div>
+                <span class="unit-label">litres / hour</span>
+              </div>
+              <div id="fuel-tiers" class="fuel-tiers"></div>
+              <button id="add-fuel-tier" class="text-button add-fuel-tier" type="button">＋ Add fuel tier</button>
+            </div>
+
+            <div class="subsection outage-section">
+              <div class="subsection-heading">
+                <div>
+                  <h3>When will grid power be unavailable?</h3>
+                  <p>Select outage hours. Green indicates grid power is available.</p>
+                </div>
+                <button id="toggle-outages" class="text-button" type="button">Clear all outages</button>
+              </div>
+              <div id="hour-slots" class="hour-slots" role="group" aria-label="Select outage hours"></div>
+              <div class="legend"><span><i class="legend-grid"></i> Grid available</span><span><i class="legend-outage"></i> Outage</span></div>
+            </div>
+          </section>
+
+          <section class="panel shop-panel">
+            <div class="section-heading">
+              <div class="step-number">02</div>
+              <div>
+                <p class="section-kicker">Next</p>
+                <h2>Add shops</h2>
+                <p class="section-description">Mandatory shops stay on during every outage. Higher values mean keeping a shop powered matters more.</p>
+              </div>
+              <button id="add-shop" class="add-button" type="button"><span aria-hidden="true">＋</span> Add shop</button>
+            </div>
+
+            <div class="shop-table-wrap">
+              <div class="shop-table-head" aria-hidden="true">
+                <span>Shop name</span><span>Power</span><span>Type</span><span>Hourly value</span><span></span>
+              </div>
+              <div id="shop-list" class="shop-list"></div>
+            </div>
+            <p class="form-hint">Hourly values represent the benefit of keeping a shop powered at that time. Mandatory shops stay on during outages.</p>
+          </section>
+
+          <details class="json-tools">
+            <summary>Import or paste JSON input</summary>
+            <p>Choose a JSON file or paste JSON below, then apply it to the form.</p>
+            <div class="json-actions">
+              <label class="file-button">Choose JSON file<input id="input-file" type="file" accept=".json,application/json" /></label>
+              <button id="apply-json" class="button-secondary" type="button">Apply JSON to form</button>
+            </div>
+            <textarea id="input-json" rows="8" spellcheck="false" aria-label="JSON input" placeholder="Paste input JSON here"></textarea>
+          </details>
+
+          <div class="action-bar">
+            <button id="load-sample" class="button-secondary" type="button">Load sample</button>
+            <button id="clear-input" class="button-quiet" type="button">Clear all</button>
+            <button id="generate" class="button-primary" type="submit"><span>Calculate roster</span><span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+
+        <section id="results" class="results hidden">
+          <div class="results-heading">
+            <div>
+              <p class="section-kicker">Your plan</p>
+              <h2>Generator roster</h2>
+            </div>
+            <div class="result-actions">
+              <button id="download-output" class="button-secondary" type="button">Download JSON</button>
+              <button id="print-output" class="button-secondary" type="button">Print</button>
+              <span class="result-badge"><span class="live-dot"></span> Calculated</span>
+            </div>
+          </div>
+          <section id="summary" class="summary-grid"></section>
+          <div class="result-detail-grid">
+            <section class="result-card">
+              <div class="card-heading"><h3>Shops without power</h3><span>During outages</span></div>
+              <div id="shop-dark-summary"></div>
+            </section>
+            <section class="result-card">
+              <div class="card-heading"><h3>Hourly generator load</h3><span>kW and fuel</span></div>
+              <div id="hour-summary" class="hour-summary"></div>
+            </section>
+          </div>
+          <section class="result-card roster-card">
+            <div class="card-heading"><h3>Shop roster by hour</h3><span class="legend"><span><i class="legend-on"></i> Powered</span><span><i class="legend-off"></i> Dark</span></span></div>
+            <div id="roster-table" class="table-wrap"></div>
+          </section>
+        </section>
+
+        <footer>Who Stays On? <span>·</span> Smart power allocation</footer>
+      </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}?v=3" defer></script>
+  </body>
+</html>

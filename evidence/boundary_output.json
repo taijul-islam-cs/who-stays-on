@@ -1,0 +1,131 @@
+{
+  "status": "ok",
+  "value_total": 3,
+  "fuel_total_litres": 0.8,
+  "per_shop_dark_hours": {
+    "boundary_mandatory": []
+  },
+  "hours": [
+    {
+      "hour": "10:00",
+      "grid": false,
+      "capacity_kw": 10,
+      "load_kw": 1,
+      "fuel_used_litres": 0.8,
+      "powered": [
+        "boundary_mandatory"
+      ],
+      "dark": []
+    },
+    {
+      "hour": "11:00",
+      "grid": true,
+      "capacity_kw": 10,
+      "load_kw": 0,
+      "fuel_used_litres": 0.0,
+      "powered": [
+        "boundary_mandatory"
+      ],
+      "dark": []
+    },
+    {
+      "hour": "12:00",
+      "grid": true,
+      "capacity_kw": 10,
+      "load_kw": 0,
+      "fuel_used_litres": 0.0,
+      "powered": [
+        "boundary_mandatory"
+      ],
+      "dark": []
+    },
+    {
+      "hour": "13:00",
+      "grid": true,
+      "capacity_kw": 10,
+      "load_kw": 0,
+      "fuel_used_litres": 0.0,
+      "powered": [
+        "boundary_mandatory"
+      ],
+      "dark": []
+    },
+    {
+      "hour": "14:00",
+      "grid": true,
+      "capacity_kw": 10,
+      "load_kw": 0,
+      "fuel_used_litres": 0.0,
+      "powered": [
+        "boundary_mandatory"
+      ],
+      "dark": []
+    },
+    {
+      "hour": "15:00",
+      "grid": true,
+      "capacity_kw": 10,
+      "load_kw": 0,
+      "fuel_used_litres": 0.0,
+      "powered": [
+        "boundary_mandatory"
+      ],
+      "dark": []
+    },
+    {
+      "hour": "16:00",
+      "grid": true,
+      "capacity_kw": 10,
+      "load_kw": 0,
+      "fuel_used_litres": 0.0,
+      "powered": [
+        "boundary_mandatory"
+      ],
+      "dark": []
+    },
+    {
+      "hour": "17:00",
+      "grid": true,
+      "capacity_kw": 10,
+      "load_kw": 0,
+      "fuel_used_litres": 0.0,
+      "powered": [
+        "boundary_mandatory"
+      ],
+      "dark": []
+    },
+    {
+      "hour": "18:00",
+      "grid": true,
+      "capacity_kw": 10,
+      "load_kw": 0,
+      "fuel_used_litres": 0.0,
+      "powered": [
+        "boundary_mandatory"
+      ],
+      "dark": []
+    },
+    {
+      "hour": "19:00",
+      "grid": true,
+      "capacity_kw": 10,
+      "load_kw": 0,
+      "fuel_used_litres": 0.0,
+      "powered": [
+        "boundary_mandatory"
+      ],
+      "dark": []
+    }
+  ],
+  "roster": [
+    {
+      "hour": "10:00",
+      "powered": [
+        "boundary_mandatory"
+      ],
+      "dark": [],
+      "load_kw": 1,
+      "fuel_used_litres": 0.8
+    }
+  ]
+}

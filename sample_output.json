@@ -1,0 +1,708 @@
+{
+  "fuel_total_litres": 16.4,
+  "hours": [
+    {
+      "capacity_kw": 20,
+      "dark": [],
+      "fuel_used_litres": 0.0,
+      "grid": true,
+      "hour": "10:00",
+      "load_kw": 0,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "tailor_jamal",
+        "mobile_shop",
+        "photocopy",
+        "tea_stall",
+        "beauty_salon",
+        "grocery_fridge",
+        "electronics",
+        "restaurant",
+        "jewellery",
+        "clothing"
+      ]
+    },
+    {
+      "capacity_kw": 20,
+      "dark": [],
+      "fuel_used_litres": 0.0,
+      "grid": true,
+      "hour": "11:00",
+      "load_kw": 0,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "tailor_jamal",
+        "mobile_shop",
+        "photocopy",
+        "tea_stall",
+        "beauty_salon",
+        "grocery_fridge",
+        "electronics",
+        "restaurant",
+        "jewellery",
+        "clothing"
+      ]
+    },
+    {
+      "capacity_kw": 20,
+      "dark": [
+        {
+          "id": "tailor_jamal",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "mobile_shop",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "grocery_fridge",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "electronics",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "restaurant",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "jewellery",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        }
+      ],
+      "fuel_used_litres": 2.0,
+      "grid": false,
+      "hour": "12:00",
+      "load_kw": 14,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "photocopy",
+        "tea_stall",
+        "beauty_salon",
+        "clothing"
+      ]
+    },
+    {
+      "capacity_kw": 20,
+      "dark": [
+        {
+          "id": "tailor_jamal",
+          "reason": "Capacity: this would require 24 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "photocopy",
+          "reason": "Capacity: this would require 22 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "tea_stall",
+          "reason": "Capacity: this would require 21 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "beauty_salon",
+          "reason": "Capacity: this would require 24 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "electronics",
+          "reason": "Capacity: this would require 25 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "clothing",
+          "reason": "Capacity: this would require 22 kW, above the 20 kW limit (current load 20 kW)."
+        }
+      ],
+      "fuel_used_litres": 2.8,
+      "grid": false,
+      "hour": "13:00",
+      "load_kw": 20,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "mobile_shop",
+        "grocery_fridge",
+        "restaurant",
+        "jewellery"
+      ]
+    },
+    {
+      "capacity_kw": 20,
+      "dark": [
+        {
+          "id": "mobile_shop",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "photocopy",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "tea_stall",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "beauty_salon",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "grocery_fridge",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "restaurant",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "jewellery",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "clothing",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        }
+      ],
+      "fuel_used_litres": 2.0,
+      "grid": false,
+      "hour": "14:00",
+      "load_kw": 14,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "tailor_jamal",
+        "electronics"
+      ]
+    },
+    {
+      "capacity_kw": 20,
+      "dark": [
+        {
+          "id": "tailor_jamal",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "mobile_shop",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "grocery_fridge",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "electronics",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "restaurant",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "jewellery",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        }
+      ],
+      "fuel_used_litres": 2.0,
+      "grid": false,
+      "hour": "15:00",
+      "load_kw": 14,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "photocopy",
+        "tea_stall",
+        "beauty_salon",
+        "clothing"
+      ]
+    },
+    {
+      "capacity_kw": 20,
+      "dark": [],
+      "fuel_used_litres": 0.0,
+      "grid": true,
+      "hour": "16:00",
+      "load_kw": 0,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "tailor_jamal",
+        "mobile_shop",
+        "photocopy",
+        "tea_stall",
+        "beauty_salon",
+        "grocery_fridge",
+        "electronics",
+        "restaurant",
+        "jewellery",
+        "clothing"
+      ]
+    },
+    {
+      "capacity_kw": 20,
+      "dark": [
+        {
+          "id": "tailor_jamal",
+          "reason": "Capacity: this would require 24 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "mobile_shop",
+          "reason": "Capacity: this would require 23 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "electronics",
+          "reason": "Capacity: this would require 25 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "restaurant",
+          "reason": "Capacity: this would require 26 kW, above the 20 kW limit (current load 20 kW)."
+        }
+      ],
+      "fuel_used_litres": 2.8,
+      "grid": false,
+      "hour": "17:00",
+      "load_kw": 20,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "photocopy",
+        "tea_stall",
+        "beauty_salon",
+        "grocery_fridge",
+        "jewellery",
+        "clothing"
+      ]
+    },
+    {
+      "capacity_kw": 20,
+      "dark": [
+        {
+          "id": "photocopy",
+          "reason": "Capacity: this would require 22 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "beauty_salon",
+          "reason": "Capacity: this would require 24 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "grocery_fridge",
+          "reason": "Capacity: this would require 23 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "restaurant",
+          "reason": "Capacity: this would require 26 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "jewellery",
+          "reason": "Capacity: this would require 23 kW, above the 20 kW limit (current load 20 kW)."
+        }
+      ],
+      "fuel_used_litres": 2.8,
+      "grid": false,
+      "hour": "18:00",
+      "load_kw": 20,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "tailor_jamal",
+        "mobile_shop",
+        "tea_stall",
+        "electronics",
+        "clothing"
+      ]
+    },
+    {
+      "capacity_kw": 20,
+      "dark": [
+        {
+          "id": "tailor_jamal",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "photocopy",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "tea_stall",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "beauty_salon",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "grocery_fridge",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "electronics",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "jewellery",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "clothing",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        }
+      ],
+      "fuel_used_litres": 2.0,
+      "grid": false,
+      "hour": "19:00",
+      "load_kw": 14,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "mobile_shop",
+        "restaurant"
+      ]
+    }
+  ],
+  "per_shop_dark_hours": {
+    "atm_booth": [],
+    "beauty_salon": [
+      3,
+      4,
+      8,
+      9
+    ],
+    "clothing": [
+      3,
+      4,
+      9
+    ],
+    "electronics": [
+      2,
+      3,
+      5,
+      7,
+      9
+    ],
+    "grocery_fridge": [
+      2,
+      4,
+      5,
+      8,
+      9
+    ],
+    "jewellery": [
+      2,
+      4,
+      5,
+      8,
+      9
+    ],
+    "mobile_shop": [
+      2,
+      4,
+      5,
+      7
+    ],
+    "pharmacy": [],
+    "photocopy": [
+      3,
+      4,
+      8,
+      9
+    ],
+    "restaurant": [
+      2,
+      4,
+      5,
+      7,
+      8
+    ],
+    "tailor_jamal": [
+      2,
+      3,
+      5,
+      7,
+      9
+    ],
+    "tea_stall": [
+      3,
+      4,
+      9
+    ]
+  },
+  "roster": [
+    {
+      "dark": [
+        {
+          "id": "tailor_jamal",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "mobile_shop",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "grocery_fridge",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "electronics",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "restaurant",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "jewellery",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        }
+      ],
+      "fuel_used_litres": 2.0,
+      "hour": "12:00",
+      "load_kw": 14,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "photocopy",
+        "tea_stall",
+        "beauty_salon",
+        "clothing"
+      ]
+    },
+    {
+      "dark": [
+        {
+          "id": "tailor_jamal",
+          "reason": "Capacity: this would require 24 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "photocopy",
+          "reason": "Capacity: this would require 22 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "tea_stall",
+          "reason": "Capacity: this would require 21 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "beauty_salon",
+          "reason": "Capacity: this would require 24 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "electronics",
+          "reason": "Capacity: this would require 25 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "clothing",
+          "reason": "Capacity: this would require 22 kW, above the 20 kW limit (current load 20 kW)."
+        }
+      ],
+      "fuel_used_litres": 2.8,
+      "hour": "13:00",
+      "load_kw": 20,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "mobile_shop",
+        "grocery_fridge",
+        "restaurant",
+        "jewellery"
+      ]
+    },
+    {
+      "dark": [
+        {
+          "id": "mobile_shop",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "photocopy",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "tea_stall",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "beauty_salon",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "grocery_fridge",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "restaurant",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "jewellery",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "clothing",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        }
+      ],
+      "fuel_used_litres": 2.0,
+      "hour": "14:00",
+      "load_kw": 14,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "tailor_jamal",
+        "electronics"
+      ]
+    },
+    {
+      "dark": [
+        {
+          "id": "tailor_jamal",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "mobile_shop",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "grocery_fridge",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "electronics",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "restaurant",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "jewellery",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        }
+      ],
+      "fuel_used_litres": 2.0,
+      "hour": "15:00",
+      "load_kw": 14,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "photocopy",
+        "tea_stall",
+        "beauty_salon",
+        "clothing"
+      ]
+    },
+    {
+      "dark": [
+        {
+          "id": "tailor_jamal",
+          "reason": "Capacity: this would require 24 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "mobile_shop",
+          "reason": "Capacity: this would require 23 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "electronics",
+          "reason": "Capacity: this would require 25 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "restaurant",
+          "reason": "Capacity: this would require 26 kW, above the 20 kW limit (current load 20 kW)."
+        }
+      ],
+      "fuel_used_litres": 2.8,
+      "hour": "17:00",
+      "load_kw": 20,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "photocopy",
+        "tea_stall",
+        "beauty_salon",
+        "grocery_fridge",
+        "jewellery",
+        "clothing"
+      ]
+    },
+    {
+      "dark": [
+        {
+          "id": "photocopy",
+          "reason": "Capacity: this would require 22 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "beauty_salon",
+          "reason": "Capacity: this would require 24 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "grocery_fridge",
+          "reason": "Capacity: this would require 23 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "restaurant",
+          "reason": "Capacity: this would require 26 kW, above the 20 kW limit (current load 20 kW)."
+        },
+        {
+          "id": "jewellery",
+          "reason": "Capacity: this would require 23 kW, above the 20 kW limit (current load 20 kW)."
+        }
+      ],
+      "fuel_used_litres": 2.8,
+      "hour": "18:00",
+      "load_kw": 20,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "tailor_jamal",
+        "mobile_shop",
+        "tea_stall",
+        "electronics",
+        "clothing"
+      ]
+    },
+    {
+      "dark": [
+        {
+          "id": "tailor_jamal",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "photocopy",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "tea_stall",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "beauty_salon",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "grocery_fridge",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "electronics",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "jewellery",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        },
+        {
+          "id": "clothing",
+          "reason": "Fuel budget: powering it would add 0.80 L and exceed the daily budget by 0.20 L."
+        }
+      ],
+      "fuel_used_litres": 2.0,
+      "hour": "19:00",
+      "load_kw": 14,
+      "powered": [
+        "pharmacy",
+        "atm_booth",
+        "mobile_shop",
+        "restaurant"
+      ]
+    }
+  ],
+  "status": "ok",
+  "value_total": 186
+}

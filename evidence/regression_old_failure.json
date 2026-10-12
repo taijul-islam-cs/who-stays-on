@@ -1,0 +1,6 @@
+{
+  "observed_baseline_status": "ok",
+  "observed_failure": "The earlier implementation accepted this input by truncating generator_capacity_kw 10.9 to 10 and shops[0].kw 3.5 to 3.",
+  "historical_response_body_retained": false,
+  "note": "This records the actual baseline behavior observed during implementation; the full old response body was not retained, so it is not reconstructed here."
+}
