@@ -7,6 +7,14 @@ const SAMPLE = {
   fuelTiers: [
     { load: 7, rate: 1.2 },
     { load: 14, rate: 2 },
+const SAMPLE = {
+  capacity: 20,
+  fuelBudget: 17,
+  maxDark: 2,
+  outageHours: [12, 13, 14, 15, 17, 18, 19],
+  fuelTiers: [
+    { load: 7, rate: 1.2 },
+    { load: 14, rate: 2 },
     { load: 20, rate: 2.8 }
   ],
   shops: [
@@ -42,7 +50,7 @@ let recalculationTimer = null;
 let requestSequence = 0;
 let activeRequest = null;
 
-function scheduleRecalculation() {
+function scheduleRecalculation(delay = 450) {
   if (!hasCalculated) return;
   window.clearTimeout(recalculationTimer);
   requestSequence += 1;
@@ -60,7 +68,7 @@ function scheduleRecalculation() {
       return;
     }
     form.requestSubmit();
-  }, 450);
+  }, delay);
 }
 
 function escapeHtml(value) {
@@ -166,8 +174,9 @@ function samplePayload() {
 function loadSample() {
   setFormValues(SAMPLE);
   inputArea.value = JSON.stringify(samplePayload(), null, 2);
-  setStatus("Sample data loaded. Review it or edit the scenario.");
-  scheduleRecalculation();
+  hasCalculated = true;
+  scheduleRecalculation(0);
+  setStatus("Sample loaded. Finding the best roster…", "working");
 }
 
 function clearScenario() {
