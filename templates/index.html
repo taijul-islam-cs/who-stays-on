@@ -90,7 +90,7 @@
                 <h2>Add shops</h2>
                 <p class="section-description">Mandatory shops stay on during every outage. Higher values mean keeping a shop powered matters more.</p>
               </div>
-              <button id="add-shop" class="add-button" type="button"><span aria-hidden="true">＋</span> Add shop</button>
+              <p id="shop-count" class="shop-count" aria-live="polite"></p>                 <button id="add-shop" class="add-button" type="button"><span aria-hidden="true">＋</span> Add shop</button>
             </div>
 
             <div class="shop-table-wrap">
@@ -153,6 +153,6 @@
         <footer>Who Stays On? <span>·</span> Smart power allocation</footer>
       </main>
     </div>
-    <script src="{{ url_for('static', filename='script.js') }}?v=5" defer></script>
+    <script src="{{ url_for('static', filename='script.js') }}?v=6" defer></script>
   </body>
 </html>
