@@ -7,14 +7,6 @@ const SAMPLE = {
   fuelTiers: [
     { load: 7, rate: 1.2 },
     { load: 14, rate: 2 },
-const SAMPLE = {
-  capacity: 20,
-  fuelBudget: 17,
-  maxDark: 2,
-  outageHours: [12, 13, 14, 15, 17, 18, 19],
-  fuelTiers: [
-    { load: 7, rate: 1.2 },
-    { load: 14, rate: 2 },
     { load: 20, rate: 2.8 }
   ],
   shops: [
